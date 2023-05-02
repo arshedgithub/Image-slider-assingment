@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style type="text/css">
+      .thumbnail {
+        /* display: inline; */
+        height: 120px;
+        width: 250px;
+      }
+      #display {
+        display: block;
+        height: 300px;
+        width: 760px;
+      }
+    </style>
+
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <h1>Image Slider</h1>
+    <img
+      onmouseover="hover(this)"
+      onmouseleave="leave(this)"
+      class="thumbnail"
+      src="./images/img1.jpg"
+      alt="image1"
+    />
+    <img
+      onmouseover="hover(this)"
+      onmouseleave="leave(this)"
+      class="thumbnail"
+      src="./images/img2.jpg"
+      alt="image2"
+    />
+    <img
+      onmouseover="hover(this)"
+      onmouseleave="leave(this)"
+      class="thumbnail"
+      src="./images/img3.jpg"
+      alt="image3"
+    />
+    <img id="display" src="./images/img1.jpg" alt="image" />
+  </body>
+</html>
